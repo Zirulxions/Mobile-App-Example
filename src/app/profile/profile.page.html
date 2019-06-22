@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img src="assets/images/profile.jpg"></ion-img>
+    <ion-card-content>
+      <ion-card-title>Javier Delgado</ion-card-title>
+      <p>Username: Zirulxions</p>
+      <p>History: IGUANA BE YOUR HERO...!</p>
+      <p>Region: Venezuela, Zulia, Maracaibo.</p>
+      <p>Addres: AV. 3E cc 80 Sect. Valle Frio edif. Mansal.</p>
+      <p>Contact: javierzirulxions@gmail.com.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label (click)="reloadData($event)">You logged: {{data}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+<!--
+  <ion-card>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+    </ion-item>
+  </ion-card>
+-->
+</ion-content>
